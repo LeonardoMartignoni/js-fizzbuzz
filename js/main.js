@@ -11,6 +11,10 @@ for (i = 1; i <= 100; i++) {
     if (i % 3 == 0 && !(i % 5 == 0)) {
         // Inserisco 'fizz' dentro l'li
         customLi.append('fizz');
+
+        // Aggiungo le classi 'box fizz' nell'elemento
+        customLi.className = 'box fizz';
+
         console.log('fizz');
     }
 
@@ -18,6 +22,10 @@ for (i = 1; i <= 100; i++) {
     else if (i % 5 == 0 && !(i % 3 == 0)) {
         // Inserisco 'buzz' dentro l'li
         customLi.append('buzz');
+
+        // Aggiungo le classi 'box buzz' nell'elemento
+        customLi.className = 'box buzz';
+
         console.log('buzz');
     }
 
@@ -25,6 +33,10 @@ for (i = 1; i <= 100; i++) {
     else if (i % 3 == 0 && i % 5 == 0) {
         // Inserisco 'fizzbuzz' dentro l'li
         customLi.append('fizzbuzz');
+
+        // Aggiungo le classi 'box fizzbuzz' nell'elemento
+        customLi.className = 'box fizzbuzz';
+
         console.log('fizzbuzz');
     }
 
@@ -32,10 +44,14 @@ for (i = 1; i <= 100; i++) {
     else {
         // Inserisco il numero dentro l'li
         customLi.append(i);
+
+        // Aggiungo le classi 'box' nell'elemento
+        customLi.className = 'box';
+
         console.log(i);
     }
 
-    // Inserisco <li> dentro <ul>
+    // Inserisco <li> creato dentro <ul>
     customUl.append(customLi);
 
 }

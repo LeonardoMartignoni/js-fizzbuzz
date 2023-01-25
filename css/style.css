@@ -1,0 +1,25 @@
+#custom_ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.box {
+    text-align: center;
+    line-height: 100px;
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+}
+
+.box.fizz {
+    background-color: coral;
+}
+
+.box.buzz {
+    background-color: cornflowerblue;
+}
+
+.box.fizzbuzz {
+    background-color: darkseagreen;
+}
